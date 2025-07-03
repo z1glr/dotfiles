@@ -1,0 +1,13 @@
+Host coruscant
+	Hostname 192.168.3.200
+	IdentityFile ~/.ssh/coruscant
+
+Host github.com
+	User git
+	Hostname github.com
+	IdentityFile ~/.ssh/github
+
+Host netcup
+	User root
+	IdentityFile ~/.ssh/netcup
+	Hostname 89.58.45.50
