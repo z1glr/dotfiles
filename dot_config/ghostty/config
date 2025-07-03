@@ -1,0 +1,114 @@
+# Use Monaspace Neon for everything
+font-family = "JetBrainsMono Nerd Font Mono"
+
+# Make sure to use Monaspace styles
+font-synthetic-style = no-bold,no-italic,no-bold-italic
+
+# Ligatures related to the equals glyph, like != and ===
+font-feature = ss01
+
+# Ligatures for greater/less or equal (<=, >=)
+font-feature = ss02
+
+# Ligatures related to arrows, like -> and ~>
+font-feature = ss03
+
+# Ligatures related to markup, like </ and />
+font-feature = ss04
+
+# Ligatures related to the F# programming language, like |>
+font-feature = ss05
+
+# Ligatures related to repeated uses of #, +, and &
+font-feature = ss06
+
+# Ligatures related to colons, like :: or =:=
+font-feature = ss07
+
+# Ligatures related to combinations of periods with other glyphs, like ..= or
+# .-
+font-feature = ss08
+
+# Ligatures related to combinations of the greater/less than and equals signs,
+# like <=>,>>, and =<<
+font-feature = ss09
+
+# Other tags, like #[ and #(
+font-feature = ss10
+
+# Enable contextual healing
+font-feature = calt
+
+# Customized spacing of repeating characters like ///
+font-feature = liga
+
+# Make font one point smaller than default
+font-size = 11
+
+# Add a bit of vertical space
+adjust-cell-height = 2
+
+# Make cursor the same height as the adjusted cells
+adjust-cursor-height = 2
+
+theme = Monokai Pro
+
+# Prevent cursor blinking
+cursor-style-blink = false
+
+# Use default mouse scroll speed
+mouse-scroll-multiplier = 1
+
+# Make background a little transparent
+background-opacity = 0.95
+
+# Make unfocused splits opaque, but a little less than the default 0.7
+unfocused-split-opacity = 0.8
+
+# Use tmux-style keybindings for split and focus control
+keybind = ctrl+b>c=new_tab
+keybind = ctrl+b>p=previous_tab
+keybind = ctrl+b>n=next_tab
+keybind = ctrl+b>shift+4=new_split:left
+keybind = ctrl+b>shift+5=new_split:right
+keybind = ctrl+b>shift+[=new_split:up
+keybind = ctrl+b>shift+'=new_split:down
+keybind = ctrl+b>o=goto_split:next
+keybind = ctrl+b>shift+o=goto_split:previous
+keybind = ctrl+b>z=toggle_split_zoom
+
+# Insert a a literal newline (used for Claude Code)
+keybind = shift+enter=text:\n
+
+# Remove collision with Neovim keybinding
+keybind = ctrl+shift+j=unbind
+
+# Distribute incomplete padding when viewport isn't exactly a multiple of cell
+# size
+window-padding-balance = true
+
+# Use colour of nearest cell (with exceptions) for padding
+window-padding-color = extend
+
+# User server-side decorations if available and preferred; currently only for
+# non-GNOME
+window-decoration = auto
+
+# Use Monaspace Argon for window title
+window-title-font-family = Monaspace Argon
+
+# Set window subtitle; currently has no effect (bug?)
+window-subtitle = working-directory
+
+# Use configured colours for tab
+window-theme = ghostty
+
+# Open new tabs at the end
+window-new-tab-position = end
+
+# Prevent shell cursor from becoming a blinking bar; reconsider when it can be
+# a non-blinking bar
+shell-integration-features = no-cursor
+
+# Show toast when text is copied to clipboard
+app-notifications = clipboard-copy
