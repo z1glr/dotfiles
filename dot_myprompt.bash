@@ -125,7 +125,7 @@ set_prompt() {
 			local utct
 			if utct=$(git status --porcelain | grep -c '^??'); then
 				((utct == 1)) && utct=
-				PS1+="${space:-"\\[$grey\\]|"}\\[$magenta\\]$utct"$' U'
+				PS1+="${space:-"\\[$grey\\]|"}\\[$magenta\\]$utct"$'U'
 				space=
 			fi
 
@@ -153,8 +153,6 @@ set_prompt() {
 					PS1+="${space:-"\\[$grey\\]|"}\\[$behcol\\]${behind}"$'\uf175' # 
 					space=
 				fi
-
-				((ahead == 0 && behind == 0)) && PS1+="${space:-"\\[$grey\\]|"}\\[$green\\]"$'\ueb8f' # 
 			fi
 		else
 			# Probably detached HEAD, use describe or commit hash
