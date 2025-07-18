@@ -2,6 +2,10 @@ Host coruscant
 	Hostname 192.168.3.200
 	IdentityFile ~/.ssh/coruscant
 
+Host corellia
+	Hostname 192.168.3.201
+	IdentityFile ~/.ssh/z1glr
+
 Host github.com
 	User git
 	Hostname github.com
