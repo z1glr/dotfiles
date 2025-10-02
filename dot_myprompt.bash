@@ -100,7 +100,7 @@ set_prompt() {
 			local uscct
 			if uscct=$(git status --porcelain | grep -c '^.[MD]'); then
 				((uscct == 1)) && uscct=
-				PS1+="${space:-"\\[$grey\\]|"}\\[$orange\\]$uscct"$'\Uf0130' # 󰄰
+				PS1+="${space:-"\\[$grey\\]|"}\\[$orange\\]$uscct"$' \Uf0130' # 󰄰
 				space=""
 			fi
 
@@ -108,7 +108,7 @@ set_prompt() {
 			local scct
 			if scct=$(git status --porcelain | grep -c '^[MADRC]'); then
 				((scct == 1)) && scct=
-				PS1+="${space:-"\\[$grey\\]|"}\\[$orange\\]$scct"$'\Uf012f' # 󰄯
+				PS1+="${space:-"\\[$grey\\]|"}\\[$orange\\]$scct"$' \Uf012f' # 󰄯
 				space=""
 			fi
 
@@ -117,7 +117,7 @@ set_prompt() {
 				local stashct
 				stashct=$(git stash list | wc -l)
 				((stashct == 1)) && stashct=
-				PS1+="${space:-"\\[$grey\\]|"}\\[$blue\\]$stashct"$'\Uf0419' # 󰐙
+				PS1+="${space:-"\\[$grey\\]|"}\\[$blue\\]$stashct"$' \Uf0419' # 󰐙
 				space=""
 			fi
 

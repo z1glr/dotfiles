@@ -1,0 +1,3 @@
+[submodule "dot_config/nvim"]
+	path = dot_config/nvim
+	url = git@git.z1glr.de:z1glr/nvim.git
