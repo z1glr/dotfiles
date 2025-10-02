@@ -4,7 +4,7 @@ Host coruscant
 
 Host corellia
 	Hostname 192.168.3.201
-	IdentityFile ~/.ssh/z1glr
+	IdentityFile ~/.ssh/corellia
 
 Host github.com
 	User git
@@ -15,3 +15,8 @@ Host netcup
 	User root
 	IdentityFile ~/.ssh/netcup
 	Hostname 89.58.45.50
+
+Host git.z1glr.de
+	User git
+	Hostname git.z1glr.de
+	IdentityFile ~/.ssh/git.z1glr.de
