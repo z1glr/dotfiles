@@ -20,3 +20,8 @@ Host git.z1glr.de
 	User git
 	Hostname git.z1glr.de
 	IdentityFile ~/.ssh/git.z1glr.de
+
+Host kirsche
+	User portainer
+	Hostname 192.168.3.172
+	IdentityFile ~/.ssh/kirsche@kirche

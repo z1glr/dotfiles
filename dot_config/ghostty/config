@@ -1,6 +1,9 @@
 # Use Monaspace Neon for everything
 font-family = "JetBrainsMono Nerd Font Mono"
 
+# theme = Monokai Pro
+theme = catppuccin-frappe.conf
+
 # Make sure to use Monaspace styles
 font-synthetic-style = no-bold,no-italic,no-bold-italic
 
@@ -50,8 +53,6 @@ adjust-cell-height = 2
 
 # Make cursor the same height as the adjusted cells
 adjust-cursor-height = 2
-
-theme = Monokai Pro
 
 # Prevent cursor blinking
 cursor-style-blink = false
