@@ -23,5 +23,5 @@ Host git.z1glr.de
 
 Host kirsche
 	User portainer
-	Hostname 192.168.3.172
+	Hostname 192.168.4.203
 	IdentityFile ~/.ssh/kirsche@kirche
